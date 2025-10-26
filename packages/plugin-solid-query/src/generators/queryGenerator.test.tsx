@@ -45,7 +45,7 @@ describe('queryGenerator operation', async () => {
       options: {
         query: {
           methods: ['get'],
-          importPath: '@tanstack/react-query',
+          importPath: '@tanstack/solid-query',
         },
         queryKey(props) {
           const keys = QueryKey.getTransformer(props)
@@ -121,7 +121,7 @@ describe('queryGenerator operation', async () => {
       pathParamsType: 'inline',
       queryKey: QueryKey.getTransformer,
       query: {
-        importPath: '@tanstack/svelte-query',
+        importPath: '@tanstack/solid-query',
         methods: ['get'],
       },
       mutation: false,
