@@ -33,7 +33,7 @@ type Query = {
    * It will be used as `import { useQuery } from '${importPath}'`.
    * It allows both relative and absolute path.
    * the path will be applied as is, so relative path should be based on the file being generated.
-   * @default '@tanstack/svelte-query'
+   * @default '@tanstack/solid-query'
    */
   importPath?: string
 }

@@ -4,8 +4,8 @@
  */
 import fetch from '@kubb/plugin-client/clients/axios'
 import type { RequestConfig, ResponseErrorConfig, ResponseConfig } from '@kubb/plugin-client/clients/axios'
-import type { QueryKey, QueryClient, UseBaseQueryOptions, UseQueryResult } from '@tanstack/svelte-query'
-import { queryOptions, useQuery } from '@tanstack/svelte-query'
+import type { QueryKey, QueryClient, UseBaseQueryOptions, UseQueryResult } from '@tanstack/solid-query'
+import { queryOptions, useQuery } from '@tanstack/solid-query'
 
 export const findPetsByTagsQueryKey = (params?: FindPetsByTagsQueryParams) => [{ url: '/pet/findByTags' }, ...(params ? [params] : [])] as const
 
