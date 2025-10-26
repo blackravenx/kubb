@@ -3,9 +3,9 @@
  * Do not edit manually.
  */
 import fetch from 'axios'
-import type { QueryKey, QueryClient, UseBaseQueryOptions, UseQueryResult } from '@tanstack/svelte-query'
+import type { QueryKey, QueryClient, UseBaseQueryOptions, UseQueryResult } from '@tanstack/solid-query'
 import type { RequestConfig, ResponseErrorConfig } from 'axios'
-import { queryOptions, useQuery } from '@tanstack/svelte-query'
+import { queryOptions, useQuery } from '@tanstack/solid-query'
 
 export const findPetsByTagsQueryKey = (params?: FindPetsByTagsQueryParams) => [{ url: '/pet/findByTags' }, ...(params ? [params] : [])] as const
 

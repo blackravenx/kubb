@@ -4,8 +4,8 @@
  */
 import fetch from '@kubb/plugin-client/clients/axios'
 import type { RequestConfig, ResponseErrorConfig } from '@kubb/plugin-client/clients/axios'
-import type { QueryKey, QueryClient, UseBaseQueryOptions, UseQueryResult } from '@tanstack/react-query'
-import { queryOptions, useQuery } from '@tanstack/react-query'
+import type { QueryKey, QueryClient, UseBaseQueryOptions, UseQueryResult } from '@tanstack/solid-query'
+import { queryOptions, useQuery } from '@tanstack/solid-query'
 
 export const findPetsByTagsQueryKey = (params?: FindPetsByTagsQueryParams) => ['test', { url: '/pet/findByTags' }, ...(params ? [params] : [])] as const
 
